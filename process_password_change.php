@@ -27,12 +27,12 @@ if ($new_password !== $confirm_password) {
 }
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "pet_grooming";
+$servername = "pawsandpurrs-server.mysql.database.azure.com";
+$username = "zstafqrshb";
+$password = "phpmyadmin1!";
+$database = "pawsandpurrs-database";
 
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli("pawsandpurrs-server.mysql.database.azure.com", "zstafqrshb", "phpmyadmin1!", "pawsandpurrs-database");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
