@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .banner {
+    background-color: #100e0c;
+    color: #ff9f43;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .title-section {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+  .title {
+    margin: 0;
+    font-size: 6rem;
+  }
+  
+  .subtitle {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .modal-buttons {
+    align-self: end;
+    margin-bottom: 10px;
+  }
+
+  .login-button button {
+    background-color: #fff;
+    color: #ff9f43;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .login-button button:hover {
+    background-color: #ffd8a8;
+  }
+.register-button button {
+  background-color: #ff9f43;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.register-button button:hover {
+  background-color: #ffd8a8;
+  color:#100e0c;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #ff9f43;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+form input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #ff9f43;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #ff7f21;
+}
+
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #ffe9c6;
+    padding: 10px 0;
+  }
+  
+  .tab-btn {
+    background: none;
+    border: none;
+    color: #ff9f43;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .tab-btn:hover,
+  .tab-btn.active {
+    background-color: #ffd8a8;
+  }
+  
+  .content {
+    text-align: center; /* Center text and image */
+    padding: 20px;
+    max-width: 800px; /* Limit content width for readability */
+    margin: 0 auto; /* Center the section horizontally */
+}
+  
+  .view {
+    display: none;
+  }
+  
+  .view.active {
+    display: block;
+  }
+/* Image Styling */
+.about-us-image {
+  display: block;
+  margin: 20px auto; /* Center the image below the text */
+  max-width: 100%; /* Scale image to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop image if necessary */
+  border-radius: 10px; /* Optional: add rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add subtle shadow */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  #about-us {
+      padding: 10px;
+  }
+
+  .about-us-image {
+      max-width: 90%; /* Slightly reduce image size for smaller screens */
+  }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1024px) {
+  #about-us {
+      max-width: 1000px; /* Increase content width for larger screens */
+  }
+
+  .about-us-image {
+      max-width: 80%; /* Slightly reduce image size on wider screens */
+  }
+}
+  /* Gallery Styles */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .gallery-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Testimonials Styles */
+  .testimonials {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffe9c6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials h3 {
+    margin-top: 0;
+    color: #ff9f43;
+    text-align: left;
+  }
+  
+  blockquote {
+    margin: 15px 0;
+    padding-left: 15px;
+    border-left: 4px solid #ff9f43;
+    font-style: italic;
+    color: #333;
+    text-align: left;
+  }
+  
+  blockquote p {
+    margin: 0;
+  }
+  
+  cite {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  
