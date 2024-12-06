@@ -1,9 +1,9 @@
 <?php
 // Database Configuration
-$host = "localhost"; // Hostname
-$username = "root"; // Default username for XAMPP
-$password = ""; // Default password (empty for XAMPP)
-$database = "pet_grooming"; // Your database name
+$host = "pawsandpurrs-server.mysql.database.azure.com"; // Hostname
+$username = "zstafqrshb"; 
+$password = "phpmyadmin1!"; 
+$database = "pawsandpurrs-database"; // Your database name
 
 // Create a connection
 $conn = new mysqli($host, $username, $password, $database);
