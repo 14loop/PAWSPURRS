@@ -10,10 +10,10 @@ if (!isset($_SESSION['client_id'])) {
 }
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "pet_grooming";
+$servername = "pawsandpurrs-server.mysql.database.azure.com";
+$username = "zstafqrshb";
+$password = "phpmyadmin1!";
+$database = "pawsandpurrs-database";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
