@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin_id'])) {
 require_once('config.php');
 
 // Database connection
-$conn = new mysqli("localhost", "root", "", "pet_grooming");
+$conn = new mysqli("pawsandpurrs-server.mysql.database.azure.com", "zstafqrshb", "phpmyadmin1!", "pawsandpurrs-database");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
