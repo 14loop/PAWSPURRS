@@ -1,5 +1,5 @@
 <?php
-require_once('config.php'); // Database connection
+require_once('/wwwroot/config.php'); // Database connection
 
 // Debugging: Show all errors during development
 error_reporting(E_ALL);
