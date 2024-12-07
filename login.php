@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('config.php'); // connection to the database
+require_once(__DIR__ . '/config.php'); // Ensure correct path
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -17,10 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $row = $result->fetch_assoc();
 
         if (password_verify($password, $row['password'])) {
-            // Store client_id in session
             $_SESSION['client_id'] = $row['client_id']; // Store client ID in session
-
-            // Return a success message as the response
             echo "Login successful";
         } else {
             echo "Invalid password.";
@@ -32,3 +29,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->close();
 }
 ?>
+
