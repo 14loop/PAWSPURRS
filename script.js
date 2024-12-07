@@ -66,7 +66,7 @@ if (submitLogin) {
               const formData = { email, password };
 
               // Send AJAX request
-              fetch('login.php', {
+              fetch('/wwwroot/login.php', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                   body: new URLSearchParams(formData)
@@ -126,7 +126,7 @@ if (submitLogin) {
               }
           }
 
-          fetch('register.php', {
+          fetch('/wwwroot/register.php', {
               method: 'POST',
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
               body: new URLSearchParams(formData)
