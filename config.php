@@ -2,7 +2,7 @@
 // Database Configuration
 $host = "pawsandpurrs-server.mysql.database.azure.com"; // Hostname
 $username = "zstafqrshb"; 
-$password = "phpmyadmin1!"; 
+$password = "CKlyc1XfXVR3Rz1$"; 
 $database = "pawsandpurrs-database"; // Your database name
 
 // Create a connection
