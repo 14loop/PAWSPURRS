@@ -21,7 +21,7 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     $pawsandpurrs-database.admin = $result->fetch_assoc();
-    if (password_verify($password, $admin['password'])) {
+    if (password_verify($password, $pawsandpurrs-database.admin['password'])) {
         // Store admin session
         $_SESSION['admin_id'] = $pawsandpurrs-database.admin['admin_id'];
         $_SESSION['role'] = $pawsandpurrs-database.admin['role'];
