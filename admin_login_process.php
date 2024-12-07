@@ -13,18 +13,18 @@ if ($conn->connect_error) {
 }
 
 // Check if the admin exists
-$sql = "SELECT * FROM admin WHERE email = ?";
+$sql = "SELECT * FROM pawsandpurrs-database.admin WHERE email = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    $admin = $result->fetch_assoc();
+    $pawsandpurrs-database.admin = $result->fetch_assoc();
     if (password_verify($password, $admin['password'])) {
         // Store admin session
-        $_SESSION['admin_id'] = $admin['admin_id'];
-        $_SESSION['role'] = $admin['role'];
+        $_SESSION['admin_id'] = $pawsandpurrs-database.admin['admin_id'];
+        $_SESSION['role'] = $pawsandpurrs-database.admin['role'];
         header("Location: admin_dashboard.php");
         exit();
     } else {
