@@ -1,10 +1,10 @@
 <?php
 class Database {
 
-private $host ="localhost";
-private $dbName = "database";
-private $username = "root";
-private $password = "";
+private $host ="pawsandpurrs-server.mysql.database.azure.com";
+private $dbName = "pawsandpurrs-database";
+private $username = "zstafqrshb";
+private $password = "phpmyadmin";
 
 public $conn;
 
